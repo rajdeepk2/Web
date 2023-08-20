@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="main">
+    <div class="login">
+        <div class="button">
+           <div id="bt"></div>
+          <button type="button" class="btn" onclick="login()">Log In</button>
+          <button type="button" class="btn" onclick="register()">Register</button>
+        </div>
+    <div class="icon">
+       <img src="photos/facebook_145802.png" alt="facebook">
+       <img src="photos/instagram_4782335.png" alt="instagram">
+       <img src="photos/twitter_3670151.png" alt="twitter">
+    </div>
+    <form id="loginform" class="inputinfo">
+        <input type="text" class="input" placeholder="User Id" required>
+        <input type="password" class="input" placeholder="Enter Password" required>
+       <input type="checkbox"  class="check-box"><span>Remember Password</span>
+       <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    <form id="registerform" class="inputinfo">
+        <input type="text" class="input" placeholder="User Id" required>
+        <input type="email" class="input" placeholder="Email Id" required>
+       <input type="checkbox"  class="check-box"><span>I agree to the terms & conditions</span>
+       <button type="submit" class="submit-btn">Register</button>
+    </form>
+    </div>
+  </div>
+   <script>
+    let x=document.getElementById("loginform");
+    let y=document.getElementById("registerform");
+    let z=document.getElementById("bt");
+    function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+    }
+    function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0";
+    }
+   </script>
+</body>
+
+</html>
